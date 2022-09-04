@@ -23,6 +23,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (ss && i < n)
 		if (ss[i++] == cc)
-			return ((void *)&s[--i]);
+			return ((void *)(s + --i));
 	return (NULL);
 }

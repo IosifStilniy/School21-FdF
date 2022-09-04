@@ -31,6 +31,8 @@ PRF_LIB		=	libft/PressF
 
 MLX			=	mlx
 
+MLXNAME		=	libmlx.a
+
 FRAMEWORKS	=	-framework OpenGL -framework AppKit
 
 NAME		=	fdf
@@ -45,7 +47,8 @@ RM			=	rm -f
 			$(GCC) -c -I$(LIBPATH) -I$(PRF_LIB) -I$(MLX) -I$(GNL) $< -o $@
 
 $(NAME):	$(HEADS) $(LIB) $(OBJS)
-			$(GCC) $(OBJS) $(LIB) -L$(MLX) -l$(MLX) $(FRAMEWORKS) -o $(NAME)
+			$(GCC) $(OBJS) $(LIB) $(MLX)/$(MLXNAME) $(FRAMEWORKS) -o $(NAME)
+			#$(GCC) $(OBJS) $(LIB) -L$(MLX) -l$(MLX) $(FRAMEWORKS) -o $(NAME)
 
 all:		$(NAME)
 

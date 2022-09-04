@@ -30,7 +30,7 @@ static char	*line_builder(char *str, char *buf, char **shift, int sw)
 	return (remal(str, buf, i));
 }
 
-static char	*trunc(char *str, char *buf, char **shift)
+static char	*ft_trunc(char *str, char *buf, char **shift)
 {
 	char	*sshift;
 
@@ -63,7 +63,7 @@ char	*get_next_line(int fd)
 	char			*str;
 
 	str = NULL;
-	str = trunc(str, buf, &shift);
+	str = ft_trunc(str, buf, &shift);
 	if ((size_t) BUFFER_SIZE < 1)
 		return (NULL);
 	if (!buf)

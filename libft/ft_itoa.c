@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int	pow10(size_t i)
+static int	ft_pow10(size_t i)
 {
 	int	res;
 
@@ -24,11 +24,11 @@ static int	pow10(size_t i)
 
 static char	*rec(int n, size_t i, char *str, int *f)
 {
-	if ((i < 10 && n < 0 && n / pow10(i))
-		|| (i < 9 && n >= 0 && (n / pow10(i + 1))))
+	if ((i < 10 && n < 0 && n / ft_pow10(i))
+		|| (i < 9 && n >= 0 && (n / ft_pow10(i + 1))))
 		str = rec(n, i + 1, str, f);
-	while ((n < 0 && i != 10 && n / pow10(i))
-		|| (n >= 0 && i != 9 && n / pow10(i + 1)))
+	while ((n < 0 && i != 10 && n / ft_pow10(i))
+		|| (n >= 0 && i != 9 && n / ft_pow10(i + 1)))
 		n = n / 10;
 	if (!str && *f)
 	{
