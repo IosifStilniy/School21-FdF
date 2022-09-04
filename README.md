@@ -28,3 +28,7 @@ Switching to perspective projection and changing FOV:
 Legend:
 
 <img width="1193" alt="Screen Shot 2022-09-04 at 18 08 43" src="https://user-images.githubusercontent.com/89987795/188320445-72c45bd8-033b-452e-9272-78891bd77eeb.png">
+
+---
+
+<img width="1187" alt="Screen Shot 2022-09-04 at 19 15 58" src="https://user-images.githubusercontent.com/89987795/188323110-6dfc7ae2-6351-4fed-8ca3-f9c7d565261e.png">
